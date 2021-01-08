@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid"
+import Button from "@material-ui/core/Button"
+import { Link } from "react-router-dom"
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 const useStyles = makeStyles((theme) => ({
   resumeContainer: {
@@ -73,11 +76,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
+    fontSize: "1.5rem",
     color: "#fff",
     background: "tomato",
     lineHeight: 1,
-    padding: "0.5rem 1rem",
+    padding: "0.5rem 0.5rem",
     "&:before": {
       display: "none",
     },
@@ -95,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: "tomato",
-    padding: "3rem 0",
+    padding: "7rem 0rem 3rem 0rem",
     textTransform: "uppercase",
   },
   subHeading: {
@@ -109,6 +112,14 @@ const useStyles = makeStyles((theme) => ({
   subtitle1: {
     color: "tan",
   },
+  description: {
+    padding: "0rem 5rem",
+  },
+  moreButton: {
+    color: "tan",
+    borderColor: "tan",
+    margin: "1rem 1rem",
+  },
 }));
 
 const Resume = () => {
@@ -120,16 +131,41 @@ const Resume = () => {
       </Typography>
       <Box component="div" className={classes.description}>
         <Grid container justify="center">
-        <Typography
-          variant="subtitle1"
-          align="center"
-          className={classes.subtitle1}
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-          ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-          Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-          repudiandae, rerum necessitatibus nisi mollitia.
-        </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Hi, my name is Sanjana Srinivas and I am pursuing a Master of Science
+            degree (Computer Engineering, Data Science Specialization) at San Jose
+            State University, California, USA. I am passionate about Data Science
+            and Augmented Reality. Over the past year, I have developed 
+            skills which include - Machine Learning,
+            Deep Learning, Computer Vision, and Data Mining. Also, I have am
+            a Fullstack Developer with 2 years of experience working for one of the
+            biggest Information Technology corporation, Wipro Technologies.
+            <br />
+            To know more about my projects refer the portfolio section.
+          </Typography>
+          <Box component="div">
+            <sapn>
+              <Button variant="outlined"
+                component={Link}
+                to="/Portfolio"
+                className={classes.moreButton} >
+                Portfolio
+                <ArrowForwardIcon />
+              </Button>
+            </sapn>
+            <span>
+              <Button variant="outlined"
+                onClick={() => window.open(require("../documents/resume_sanjana.pdf"))}
+                className={classes.moreButton} >
+                Resume
+                <ArrowForwardIcon />
+              </Button>
+            </span>
+          </Box>
         </Grid>
       </Box>
       <Box component="div" className={classes.timeLine}>
@@ -145,7 +181,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Student Assistant
+            Research Assistant
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             San Jose State University
@@ -155,10 +191,8 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Working on reducing compute and memory footprint of depth estimation
+            neural network.
           </Typography>
         </Box>
         <Box component="div" className={classes.timeLineItem}>
@@ -177,10 +211,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Specialization - Data Science.
           </Typography>
         </Box>
         <Typography
@@ -205,10 +236,13 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Frontend frameworks - Angular, Ionic.
+            <br />
+            Backend framework - NodeJS.
+            <br />
+            Databases - MongoDB, Magento, Drupal.
+            <br />
+            Chatbot - Avaamo
           </Typography>
         </Box>
         <Typography
@@ -227,16 +261,6 @@ const Resume = () => {
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             PES Institute of Technology
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
           </Typography>
         </Box>
         <Typography

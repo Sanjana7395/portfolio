@@ -2,9 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Facebook from "@material-ui/icons/Facebook";
-import Twitter from "@material-ui/icons/Twitter";
-import Instagram from "@material-ui/icons/Instagram";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -12,13 +12,23 @@ const useStyles = makeStyles({
     width: '100%',
     position: 'fixed',
     bottom: 0,
+    height: "100px",
   },
   root: {
     "& .MuiSvgIcon-root": {
       fill: "tan",
+      color: "tan",
+      fontSize: "2rem",
       "&:hover": {
         fill: "tomato",
-        fontSize: "1.8rem",
+        color: "tomato",
+        fontSize: "2.5rem",
+      },
+    },
+    "& .MuiBottomNavigationAction-label": {
+      color: "tan",
+      "&:hover": {
+        color: "tomato",
       },
     },
   },
@@ -28,10 +38,22 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
-      <BottomNavigationAction icon={<Instagram />} className={classes.root} />
+    <BottomNavigation className={classes.bottomNavContainer} showLabels>
+      <BottomNavigationAction 
+      label="LinkedIn" 
+      icon={<LinkedInIcon />} 
+      className={classes.root}
+      onClick={() => window.open("https://www.linkedin.com/in/sanjana-srinivas-04a363125/")} />
+      <BottomNavigationAction 
+      label="Github" 
+      icon={<GitHubIcon />} 
+      className={classes.root}
+      onClick={() => window.open("https://github.com/Sanjana7395")} />
+      <BottomNavigationAction 
+      label="Meduim" 
+      icon={<DescriptionIcon />} 
+      className={classes.root}
+      onClick={() => window.open("https://medium.com/@sanjanasrinivas73")} />
     </BottomNavigation>
   );
 };

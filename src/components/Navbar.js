@@ -16,13 +16,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
+import Button from '@material-ui/core/Button';
 import ContactMail from "@material-ui/icons/ContactMail";
 import SubjectIcon from '@material-ui/icons/Subject';
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
-import { MemoryRouter as Router } from 'react-router';
-import Footer from "../components/Footer";
-import { Button } from "@material-ui/core";
+import avatar from "../avatar.jpg";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -34,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "tan",
+    flexGrow: "1",
   },
   menuSliderContainer: {
     width: 250,
@@ -56,7 +55,6 @@ const menuItems = [
   { listIcon: <AssignmentInd />, listText: "About Me", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
-  { listIcon: <SubjectIcon />, listText: "Resume", listPath: "/" }
 ];
 
 const Navbar = () => {
@@ -84,14 +82,33 @@ const Navbar = () => {
             <ListItemText primary={item.listText} />
           </ListItem>
         ))}
+        <ListItem
+            button
+            className={classes.listItem}
+            onClick={() => {
+              setOpen(false);
+              window.open(require('../documents/resume_sanjana.pdf'));
+            }}
+          >
+            <ListItemIcon className={classes.listItem}>
+              <SubjectIcon />
+            </ListItemIcon>
+            <ListItemText primary="Resume" />
+          </ListItem>
       </List>
     </Box>
+  );
+
+  const drawer = () => (
+    <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+        {sideList()}
+    </Drawer>
   );
 
   return (
     <React.Fragment>
       <Box component="nav">
-        <AppBar position="static" className={classes.appbar}>
+        <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
               <MenuIcon className={classes.arrow} />
@@ -99,13 +116,17 @@ const Navbar = () => {
             <Typography variant="h5" className={classes.title}>
               SS
             </Typography>
+            <div className={classes.listItem}>
+              <Button color="inherit" component={Link} to="/">Home</Button>
+              <Button color="inherit" component={Link} to="/resume">About Me</Button>
+              <Button color="inherit" component={Link} to="/portfolio">Portfolio</Button>
+              <Button color="inherit" component={Link} to="/contact">Contact</Button>
+              <Button color="inherit" onClick={() => window.open(require("../documents/resume_sanjana.pdf"))}>Resume</Button>
+            </div>
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
-        {sideList()}
-        {/* <Footer /> */}
-      </Drawer>
+      {drawer()}
     </React.Fragment>
   );
 };

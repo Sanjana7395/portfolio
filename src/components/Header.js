@@ -3,14 +3,17 @@ import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button"
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
+import { Link } from "react-router-dom"
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import avatar from "../avatar.jpg";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(25),
+    height: theme.spacing(25),
     margin: theme.spacing(1),
   },
   title: {
@@ -29,6 +32,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     zIndex: 1,
   },
+  moreButton: {
+    color: "tan",
+    borderColor: "tan",
+    marginTop: "1rem",
+  },
 }));
 
 const Header = () => {
@@ -46,17 +54,18 @@ const Header = () => {
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "Data Science Engineer",
-            "Machine Learning Engineer",
-            "Computer Vision Engineer",
-            "Software Engineer",
-            "Full Stack Developer"
+            "Data Science | Machine Learning | Computer Vision | <br /> Software Engineer | Full Stack Developer"
           ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
+          typeSpeed={50}
         />
       </Typography>
+      <Button variant="outlined" 
+      component={Link} 
+      to="/resume"
+      className={classes.moreButton} >
+        Know More
+        <ArrowForwardIcon />
+      </Button>
     </Box>
   );
 };
