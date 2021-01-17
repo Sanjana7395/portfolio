@@ -49,6 +49,8 @@ const projects = [
     were conducted to analyse the results obtained using space-increasing
     discretization and different weight decay parameters.`,
     image: project1,
+    url: "https://github.com/sjsu-smart-lab/MLChallenge",
+    demo: "https://github.com/sjsu-smart-lab/MLChallenge",
   },
   {
     name: "Virtual Makeup Application",
@@ -57,6 +59,8 @@ const projects = [
     segments different parts of the face. The frontend constitutes of ReactJS and OpenCV.js to change the color
     of the segmented parts.`,
     image: project2,
+    url: "https://github.com/Sanjana7395/face_makeup_app",
+    demo: "https://github.com/Sanjana7395/face_makeup_app",
   },
   {
     name: "Face Segmentation",
@@ -66,6 +70,8 @@ const projects = [
     segmentation process. CelebAMask-HQ dataset is used for training and
     testing.`,
     image: project3,
+    url: "https://github.com/Sanjana7395/Face_segmentation",
+    demo: "https://github.com/Sanjana7395/Face_segmentation",
   },
   {
     name: "Grape Disease Detection",
@@ -74,6 +80,8 @@ const projects = [
     methods(Majority voting and Stacked prediction) - to recognize and classfy
     various diseases in grape plant.`,
     image: project4,
+    url: "https://github.com/Sanjana7395/Grape-disease-classification",
+    demo: "https://github.com/Sanjana7395/Grape-disease-classification",
   },
   {
     name: "Wildfire Prediction",
@@ -86,6 +94,8 @@ const projects = [
     State wildfire
     and temperature - and training them using different models.`,
     image: project5,
+    url: "https://github.com/parvathysjsu/CMPE255Project",
+    demo: "https://github.com/parvathysjsu/CMPE255Project",
   },
   {
     name: "Improving Situational Awareness for e-Scooter Riders",
@@ -96,6 +106,8 @@ const projects = [
     footprint of these neural networks with minimal reduction
     in performance.`,
     image: project6,
+    url: "https://github.com/Sanjana7395/static_quantization",
+    demo: "https://github.com/Sanjana7395/static_quantization",
   },
 ];
 
@@ -110,7 +122,6 @@ const Portfolio = () => {
         {projects.map((project, i) => (
           <Grid item className={classes.card} xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   alt="Project 1"
@@ -125,13 +136,20 @@ const Portfolio = () => {
                     {project.description}
                   </Typography>
                 </CardContent>
-              </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button 
+                size="small" 
+                color="primary" 
+                onClick={() => window.open(project.url)}
+                >
+                  View
                 </Button>
-                <Button size="small" color="primary">
-                  Live Demo
+                <Button 
+                size="small" 
+                color="primary" 
+                onClick={() => window.open(project.url)}
+                >
+                  Demo
                 </Button>
               </CardActions>
             </Card>
