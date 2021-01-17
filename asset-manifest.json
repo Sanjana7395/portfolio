@@ -1,31 +1,31 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.616ced0e.chunk.css",
-    "main.js": "/portfolio/static/js/main.62999e72.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.62999e72.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7a467968.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7a467968.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.7f32057e.chunk.js": "/portfolio/static/js/2.7f32057e.chunk.js",
-    "static/js/2.7f32057e.chunk.js.map": "/portfolio/static/js/2.7f32057e.chunk.js.map",
+    "static/js/2.5ba51424.chunk.js": "/portfolio/static/js/2.5ba51424.chunk.js",
+    "static/js/2.5ba51424.chunk.js.map": "/portfolio/static/js/2.5ba51424.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.2eb320f51eb49aedd69065d919c4df7e.js": "/portfolio/precache-manifest.2eb320f51eb49aedd69065d919c4df7e.js",
+    "precache-manifest.146eee989cd57193e94f63c80a33ba82.js": "/portfolio/precache-manifest.146eee989cd57193e94f63c80a33ba82.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.616ced0e.chunk.css.map": "/portfolio/static/css/main.616ced0e.chunk.css.map",
-    "static/js/2.7f32057e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7f32057e.chunk.js.LICENSE.txt",
+    "static/js/2.5ba51424.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5ba51424.chunk.js.LICENSE.txt",
     "static/media/MLChallenge.png": "/portfolio/static/media/MLChallenge.2ee86127.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.14a54d3d.jpg",
     "static/media/App.css": "/portfolio/static/media/coffee-apple.2dd213aa.jpg",
     "static/media/face_app.png": "/portfolio/static/media/face_app.30c629ad.png",
     "static/media/grape.png": "/portfolio/static/media/grape.dc23c506.png",
     "static/media/quantization.png": "/portfolio/static/media/quantization.6b20a2a3.png",
-    "static/media/resume_sanjana.pdf": "/portfolio/static/media/resume_sanjana.b31c8645.pdf",
+    "static/media/resume_sanjana.pdf": "/portfolio/static/media/resume_sanjana.60d2ac92.pdf",
     "static/media/segmentation.png": "/portfolio/static/media/segmentation.bca6967a.png",
     "static/media/wildfire.png": "/portfolio/static/media/wildfire.0989a235.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.7f32057e.chunk.js",
+    "static/js/2.5ba51424.chunk.js",
     "static/css/main.616ced0e.chunk.css",
-    "static/js/main.62999e72.chunk.js"
+    "static/js/main.7a467968.chunk.js"
   ]
 }
