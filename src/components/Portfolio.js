@@ -142,7 +142,7 @@ const Portfolio = () => {
                 color="primary" 
                 onClick={() => window.open(project.url)}
                 >
-                  View
+                  Github
                 </Button>
                 <Button 
                 size="small" 
