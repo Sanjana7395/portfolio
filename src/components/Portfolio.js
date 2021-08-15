@@ -15,7 +15,8 @@ import project2 from "../images/face_app.png";
 import project3 from "../images/segmentation.png";
 import project4 from "../images/grape.png";
 import project5 from "../images/wildfire.png";
-import project6 from "../images/quantization.png";
+import project6 from "../images/illustration.png";
+import project7 from "../images/car_app.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -35,22 +36,22 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
   },
   card: {
-    display: "flex"
+    display: "flex",
   },
 }));
 
 const projects = [
   {
-    name: "ML Reproducibility Challenge",
-    description: `(Participating) The aim of this challenge is to 
-    validate the reproducibility of the paper - Self-supervised Monocular
-    Trained Depth Estimation using Self-attention and Discrete Disparity
-    Volume - accepted in the CVPR-2020 conference. Additionally experiments
-    were conducted to analyse the results obtained using space-increasing
-    discretization and different weight decay parameters.`,
-    image: project1,
-    url: "https://github.com/sjsu-smart-lab/MLChallenge",
-    demo: "https://github.com/sjsu-smart-lab/MLChallenge",
+    name: "Improving Situational Awareness for e-Scooter Riders",
+    description: `(Ongoing thesis) Current depth estimation algorithms 
+    are inaccurate, slow, or costly for our application. The vision of 
+    this research investigate techniques like quantization and neural network
+    introspection to reduce memory and compute 
+    footprint of these neural networks with minimal reduction
+    in performance.`,
+    image: project6,
+    url: "https://github.com/Sanjana7395/static_quantization",
+    demo: "https://github.com/Sanjana7395/static_quantization",
   },
   {
     name: "Virtual Makeup Application",
@@ -98,16 +99,26 @@ const projects = [
     demo: "https://github.com/parvathysjsu/CMPE255Project",
   },
   {
-    name: "Improving Situational Awareness for e-Scooter Riders",
-    description: `(Ongoing thesis) Current depth estimation algorithms 
-    are inaccurate, slow, or costly for our application. The vision of 
-    this research investigate techniques like quantization and neural network
-    introspection to reduce memory and compute 
-    footprint of these neural networks with minimal reduction
-    in performance.`,
-    image: project6,
-    url: "https://github.com/Sanjana7395/static_quantization",
-    demo: "https://github.com/Sanjana7395/static_quantization",
+    name: "ML Reproducibility Challenge",
+    description: `(Participated) The aim of this challenge is to 
+    validate the reproducibility of the paper - Self-supervised Monocular
+    Trained Depth Estimation using Self-attention and Discrete Disparity
+    Volume - accepted in the CVPR-2020 conference. Additionally experiments
+    were conducted to analyse the results obtained using space-increasing
+    discretization and different weight decay parameters.`,
+    image: project1,
+    url: "https://github.com/sjsu-smart-lab/MLChallenge",
+    demo: "https://github.com/sjsu-smart-lab/MLChallenge",
+  },
+  {
+    name: "Autonomous Car Rental Application",
+    description: `An end-to-end application that enables renting autonomous cars.
+    The multi-tenant application includes booking, payment transactions and history.
+    The application was hosted on AWS with features including auto-scaling and load 
+    balancer.`,
+    image: project7,
+    url: "https://github.com/Sanjana7395/avrentals",
+    demo: "https://github.com/Sanjana7395/avrentals",
   },
 ];
 
@@ -122,35 +133,35 @@ const Portfolio = () => {
         {projects.map((project, i) => (
           <Grid item className={classes.card} xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="140"
-                  image={project.image}
-                />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>
+              <CardMedia
+                component="img"
+                alt="Project 1"
+                height="140"
+                image={project.image}
+              />
+              <CardContent>
+                <Typography variant="h5" gutterBottom>
+                  {project.name}
+                </Typography>
+                <Typography variant="body2" color="textSecondary">
+                  {project.description}
+                </Typography>
+              </CardContent>
               <CardActions>
-                <Button 
-                size="small" 
-                color="primary" 
-                onClick={() => window.open(project.url)}
+                <Button
+                  size="small"
+                  color="primary"
+                  onClick={() => window.open(project.url)}
                 >
                   Github
                 </Button>
-                <Button 
+                {/* <Button 
                 size="small" 
                 color="primary" 
                 onClick={() => window.open(project.url)}
                 >
                   Demo
-                </Button>
+                </Button> */}
               </CardActions>
             </Card>
           </Grid>

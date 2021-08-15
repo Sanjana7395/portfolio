@@ -2,15 +2,15 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid"
-import Button from "@material-ui/core/Button"
-import { Link } from "react-router-dom"
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 const useStyles = makeStyles((theme) => ({
   resumeContainer: {
     background: "#233",
-    width: "100%"
+    width: "100%",
   },
   timeLine: {
     position: "relative",
@@ -136,31 +136,37 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Hi, my name is Sanjana Srinivas and I am pursuing a Master of Science
-            degree (Computer Engineering, Data Science Specialization) at San Jose
-            State University, California, USA. I am passionate about Data Science
-            and Augmented Reality. Over the past year, I have developed 
-            skills which include - Machine Learning,
-            Deep Learning, Computer Vision, and Data Mining. Also, I have am
-            a Fullstack Developer with 2 years of experience working for one of the
-            biggest Information Technology corporation, Wipro Technologies.
+            Hi, my name is Sanjana Srinivas and I am pursuing a Master of
+            Science degree (Computer Engineering, Data Science Specialization)
+            at San Jose State University, California, USA. I am passionate about
+            Data Science and Augmented Reality. Over the past year, I have
+            developed skills which include - Machine Learning, Deep Learning,
+            Computer Vision, and Data Mining. Also, I have am a Fullstack
+            Developer with 2 years of experience working for one of the biggest
+            Information Technology corporation, Wipro Technologies.
             <br />
             To know more about my projects refer the portfolio section.
           </Typography>
           <Box component="div">
             <sapn>
-              <Button variant="outlined"
+              <Button
+                variant="outlined"
                 component={Link}
                 to="/Portfolio"
-                className={classes.moreButton} >
+                className={classes.moreButton}
+              >
                 Portfolio
                 <ArrowForwardIcon />
               </Button>
             </sapn>
             <span>
-              <Button variant="outlined"
-                onClick={() => window.open(require("../documents/resume_sanjana.pdf"))}
-                className={classes.moreButton} >
+              <Button
+                variant="outlined"
+                onClick={() =>
+                  window.open(require("../documents/resume_sanjana.pdf"))
+                }
+                className={classes.moreButton}
+              >
                 Resume
                 <ArrowForwardIcon />
               </Button>
@@ -175,6 +181,25 @@ const Resume = () => {
         >
           Present
         </Typography>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Software Engineering Intern
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Juniper Networks
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Working on time series forecasting to predict resource utilization.
+          </Typography>
+        </Box>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
