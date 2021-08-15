@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b959ece2f044019c1e71f03b55e7d847",
+    "revision": "8fb797f95ef7d2306736abda8b8d248e",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "36066625bd5549bd799b",
+    "revision": "4723765852b856d7e3b4",
     "url": "/portfolio/static/css/main.616ced0e.chunk.css"
   },
   {
-    "revision": "1c21b33b92b7eb981b9f",
-    "url": "/portfolio/static/js/2.5ba51424.chunk.js"
+    "revision": "65b8ae424c95d66733cd",
+    "url": "/portfolio/static/js/2.aa78dd41.chunk.js"
   },
   {
     "revision": "84f48c9a090ba2f8cc4a11e48dd3dad0",
-    "url": "/portfolio/static/js/2.5ba51424.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.aa78dd41.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "36066625bd5549bd799b",
-    "url": "/portfolio/static/js/main.9077e37e.chunk.js"
+    "revision": "4723765852b856d7e3b4",
+    "url": "/portfolio/static/js/main.a1c90e59.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/avatar.14a54d3d.jpg"
   },
   {
+    "revision": "1e0c8f499b11ac239f788b10fd022e6e",
+    "url": "/portfolio/static/media/car_app.1e0c8f49.png"
+  },
+  {
     "revision": "2dd213aa54b22c3bca0c62f570d1512a",
     "url": "/portfolio/static/media/coffee-apple.2dd213aa.jpg"
   },
@@ -44,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/grape.dc23c506.png"
   },
   {
-    "revision": "6b20a2a363530cbd7643028d5d07ec8c",
-    "url": "/portfolio/static/media/quantization.6b20a2a3.png"
+    "revision": "d73492bf0c20c6c0526118eeb7a6bcc2",
+    "url": "/portfolio/static/media/illustration.d73492bf.png"
   },
   {
-    "revision": "60d2ac92c549f7c9eff377da6faff095",
-    "url": "/portfolio/static/media/resume_sanjana.60d2ac92.pdf"
+    "revision": "0e3cd71b2e6b194065c2b9d2e6056fff",
+    "url": "/portfolio/static/media/resume_sanjana.0e3cd71b.pdf"
   },
   {
     "revision": "bca6967a758e950a5561b7f72549f4d9",

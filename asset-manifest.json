@@ -1,31 +1,32 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.616ced0e.chunk.css",
-    "main.js": "/portfolio/static/js/main.9077e37e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9077e37e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a1c90e59.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a1c90e59.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.5ba51424.chunk.js": "/portfolio/static/js/2.5ba51424.chunk.js",
-    "static/js/2.5ba51424.chunk.js.map": "/portfolio/static/js/2.5ba51424.chunk.js.map",
+    "static/js/2.aa78dd41.chunk.js": "/portfolio/static/js/2.aa78dd41.chunk.js",
+    "static/js/2.aa78dd41.chunk.js.map": "/portfolio/static/js/2.aa78dd41.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.6a8794893fa740eafae96b5730be0706.js": "/portfolio/precache-manifest.6a8794893fa740eafae96b5730be0706.js",
+    "precache-manifest.ce2f8b9d22b8722cca10e0bd71dff9b4.js": "/portfolio/precache-manifest.ce2f8b9d22b8722cca10e0bd71dff9b4.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.616ced0e.chunk.css.map": "/portfolio/static/css/main.616ced0e.chunk.css.map",
-    "static/js/2.5ba51424.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5ba51424.chunk.js.LICENSE.txt",
+    "static/js/2.aa78dd41.chunk.js.LICENSE.txt": "/portfolio/static/js/2.aa78dd41.chunk.js.LICENSE.txt",
     "static/media/MLChallenge.png": "/portfolio/static/media/MLChallenge.2ee86127.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.14a54d3d.jpg",
+    "static/media/car_app.png": "/portfolio/static/media/car_app.1e0c8f49.png",
     "static/media/App.css": "/portfolio/static/media/coffee-apple.2dd213aa.jpg",
     "static/media/face_app.png": "/portfolio/static/media/face_app.30c629ad.png",
     "static/media/grape.png": "/portfolio/static/media/grape.dc23c506.png",
-    "static/media/quantization.png": "/portfolio/static/media/quantization.6b20a2a3.png",
-    "static/media/resume_sanjana.pdf": "/portfolio/static/media/resume_sanjana.60d2ac92.pdf",
+    "static/media/illustration.png": "/portfolio/static/media/illustration.d73492bf.png",
+    "static/media/resume_sanjana.pdf": "/portfolio/static/media/resume_sanjana.0e3cd71b.pdf",
     "static/media/segmentation.png": "/portfolio/static/media/segmentation.bca6967a.png",
     "static/media/wildfire.png": "/portfolio/static/media/wildfire.0989a235.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.5ba51424.chunk.js",
+    "static/js/2.aa78dd41.chunk.js",
     "static/css/main.616ced0e.chunk.css",
-    "static/js/main.9077e37e.chunk.js"
+    "static/js/main.a1c90e59.chunk.js"
   ]
 }
