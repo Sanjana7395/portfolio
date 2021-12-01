@@ -3,11 +3,11 @@ import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button"
+import Button from "@material-ui/core/Button";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom"
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Link } from "react-router-dom";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import avatar from "../avatar.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +45,11 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} src={avatar} alt="Sanjana Srinivas" />
+        <Avatar
+          className={classes.avatar}
+          src={avatar}
+          alt="Sanjana Srinivas"
+        />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Sanjana Srinivas"]} typeSpeed={40} />
@@ -54,15 +58,17 @@ const Header = () => {
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "Data Science | Machine Learning | Computer Vision | <br /> Software Engineer | Full Stack Developer"
+            "Software Engineer | Data Science | Machine Learning | <br /> Computer Vision | Full Stack Developer",
           ]}
           typeSpeed={50}
         />
       </Typography>
-      <Button variant="outlined" 
-      component={Link} 
-      to="/resume"
-      className={classes.moreButton} >
+      <Button
+        variant="outlined"
+        component={Link}
+        to="/resume"
+        className={classes.moreButton}
+      >
         Know More
         <ArrowForwardIcon />
       </Button>

@@ -17,6 +17,8 @@ import project4 from "../images/grape.png";
 import project5 from "../images/wildfire.png";
 import project6 from "../images/illustration.png";
 import project7 from "../images/car_app.png";
+import project8 from "../images/fashion.png";
+import project9 from "../images/quantization.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -42,16 +44,16 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Improving Situational Awareness for e-Scooter Riders",
-    description: `(Ongoing thesis) Current depth estimation algorithms 
-    are inaccurate, slow, or costly for our application. The vision of 
-    this research investigate techniques like quantization and neural network
-    introspection to reduce memory and compute 
+    name: "Faster Depth Estimation for Situational Awareness on Urban Streets",
+    description: `(Thesis) Current depth estimation techniques have a very high 
+    computational overhead, which makes them unsuitable 
+    out-of-the-box for real-time applications. This research investigate techniques
+    like quantization, pruning and use of efficient convnets to reduce memory and compute 
     footprint of these neural networks with minimal reduction
     in performance.`,
     image: project6,
-    url: "https://github.com/Sanjana7395/static_quantization",
-    demo: "https://github.com/Sanjana7395/static_quantization",
+    url: "https://github.com/Sanjana7395/",
+    demo: "https://github.com/Sanjana7395/",
   },
   {
     name: "Virtual Makeup Application",
@@ -83,6 +85,16 @@ const projects = [
     image: project4,
     url: "https://github.com/Sanjana7395/Grape-disease-classification",
     demo: "https://github.com/Sanjana7395/Grape-disease-classification",
+  },
+  {
+    name: "Fashion Recommendation System",
+    description: `This project involves building similarity-based visual
+    recommendation system using DeepFashion dataset. Used pretrained ResNet
+    to generate image embeddings of the gallery set. A nearest neighbor classifier
+    (Annoy) was built using this gallery set with cosine similarity as the distance metric.`,
+    image: project8,
+    url: "https://github.com/Sanjana7395/static_quantization",
+    demo: "https://github.com/Sanjana7395/static_quantization",
   },
   {
     name: "Wildfire Prediction",
@@ -119,6 +131,14 @@ const projects = [
     image: project7,
     url: "https://github.com/Sanjana7395/avrentals",
     demo: "https://github.com/Sanjana7395/avrentals",
+  },
+  {
+    name: "Pytorch Quantization Library",
+    description: `This project mostly dwells on the implementation of static quantization
+    using off-the-shelf Pytorch quantization library.`,
+    image: project9,
+    url: "https://github.com/Sanjana7395/static_quantization",
+    demo: "https://github.com/Sanjana7395/static_quantization",
   },
 ];
 
